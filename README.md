@@ -1,5 +1,5 @@
 # Mini Weather App
-An app for displaying the current weather at your location or a selected one.
+An app for displaying the weather at your current location or a selected one.
 
 ## Tech Used
 - TODO
