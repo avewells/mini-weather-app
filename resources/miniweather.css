@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    background: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%) fixed;
+    color: white;
+}
+
+body {
+    /*margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#city-row {
+    margin-bottom: 0px;
+}
+
+#icon-row {
+    margin-bottom: 10px;
+}
+
+
+
+.wi {
+    font-size: 100px;
+}
