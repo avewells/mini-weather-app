@@ -4,17 +4,19 @@ html, body {
     color: white;
 }
 
-body {
-    /*margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
-}
-
 .vertical-center {
     min-height: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
+}
+
+#header-row {
+    margin-bottom: 25px;
+}
+
+#input-row {
+    margin-bottom: 40px;
 }
 
 #city-row {
@@ -25,8 +27,14 @@ body {
     margin-bottom: 10px;
 }
 
-
-
-.wi {
+.wi, .fa-refresh {
     font-size: 100px;
 }
+
+/* 
+Have these set as hidden so that the page layout isn't
+affected while the weather is loading.
+*/
+#temp-val, #city-name {
+    visibility: hidden;
+} 

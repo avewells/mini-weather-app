@@ -26,32 +26,35 @@
     <body>
         <div class='vertical-center'>
             <div class='container-fluid'>
-                <div class='row'>
-                    <div class='col-sm-6 text-center'>
+                <div id='header-row' class='row'>
+                    <h3 class='text-center'>Mini Weather App</h3>
+                </div>
+                <div id='input-row' class='row'>
+                    <div class='col-sm-6 col-sm-offset-3'>
                         <div class='input-group'>
-                            <input type='text' class='form-control' id='weatherLocation' placeholder='Location...'>
                             <div class="input-group-btn">
                                 <button id='getLocation' class="btn btn-default" type="submit">
                                     <i class="fa fa-location-arrow"></i>
                                 </button>
-                                <button id='searchLocation' class="btn btn-default" type="submit">
-                                    <i class="fa fa-search"></i>
-                                </button>
+                            </div>
+                            <input type='text' class='form-control' id='weatherLocation' placeholder='Location...'>
+                            <div class="input-group-addon">
+                                <i class="fa fa-search"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id='icon-row' class='row'>
-                    <div class='text-center'><i id='weather-icon' class='wi wi-day-sunny'></i></div>
+                    <div class='text-center'><i id='weather-icon' class='fa fa-refresh fa-spin'></i></div>
                 </div>
                 <div id='temp-row' class='row'>
-                    <div class='text-center'><h2 id='temp-val'>67&#8457;</h2></div>
+                    <div class='text-center'><h2 id='temp-val'>tmp</h2></div>
                 </div>
                 <div id='desc-row' class='row'>
-                    <div class='text-center'><p id='weather-desc'>Clear</p></div>
+                    <div class='text-center'><p id='weather-desc'>Loading weather...</p></div>
                 </div>
                 <div id='city-row' class='row'>
-                    <div class='text-center'><p id='city-name'>City Name</p></div>
+                    <div class='text-center'><p id='city-name'>tmp</p></div>
                 </div>
             </div>
         </div>
@@ -59,6 +62,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Google Places API -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsG_Rm_iyxT6ZYiSW-iC0Fq_MuBZDMdBw&libraries=places"></script>
         <!-- my custom js for the app -->
         <script src="resources/miniweather.js"></script>
     </body>
