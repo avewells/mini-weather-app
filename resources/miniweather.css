@@ -20,11 +20,19 @@ html, body {
 }
 
 #city-row {
-    margin-bottom: 0px;
+    margin-bottom: 25px;
 }
 
 #icon-row {
     margin-bottom: 10px;
+}
+
+#footer-text {
+    font-size: 10px;
+}
+
+#footer-text > a {
+    color: #72EDF2;
 }
 
 .wi, .fa-refresh {
